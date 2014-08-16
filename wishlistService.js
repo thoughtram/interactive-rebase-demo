@@ -7,7 +7,7 @@ function wishlistService (db) {
         db.wishlistItems.addBatch(items);
     };
 
-    this.deleteItem = function (id) {
+    this.deleteItemById = function (id) {
         db.wishlistItems.remove(id);
     };
 
