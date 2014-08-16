@@ -1,5 +1,5 @@
 function userService (db) {
-    this.getUser = function (id) {
+    this.getUserById = function (id) {
         return db.users.get(id);
     };
 }
