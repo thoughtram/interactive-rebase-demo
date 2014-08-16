@@ -10,4 +10,8 @@ function wishlistService (db) {
     this.deleteItem = function (id) {
         db.wishlistItems.remove(id);
     };
+
+    this.deleteItems = function (ids) {
+        db.wishlistItems.removeBatch(ids);
+    };
 }
