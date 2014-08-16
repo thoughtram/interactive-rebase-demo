@@ -11,7 +11,7 @@ function wishlistService (db) {
         db.wishlistItems.remove(id);
     };
 
-    this.deleteItems = function (ids) {
+    this.deleteItemsByIds = function (ids) {
         db.wishlistItems.removeBatch(ids);
     };
 }
